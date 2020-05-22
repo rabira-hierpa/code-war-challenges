@@ -6,8 +6,16 @@ More challenges will be added soon.
 
 ### Current Challenge
 
-- Replace With Alphabet Position
+- [Format a string of names](https://www.codewars.com/kata/53368a47e38700bd8300030d/train/javascript)
 
-### Challenges I have done
+### Upocming Challenges
 
-### Challenges take
+- [Counting sheep](https://www.codewars.com/kata/54edbc7200b811e956000556)
+
+### Archived Challenges
+
+- [Replace Alphabet With Position](https://www.codewars.com/kata/546f922b54af40e1e90001da)
+
+### Test setup
+
+I am using VS code to takel the challenges with the Quokka Extension
