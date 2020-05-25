@@ -1,78 +1,59 @@
-// Format a string of names - Challenge #2
+// Counting Sheeps - Challenge #3
 
 OfficalLink =
-	'https://www.codewars.com/kata/53368a47e38700bd8300030d/train/javascript';
+	'https://www.codewars.com/kata/54edbc7200b811e956000556/train/javascript';
 
 // My first approach to the problem
-function list(names) {
-	//your code here
-	var strNames = [];
-	if (names.length === 1) {
-		strNames.push(names[0].name);
-	}
-	if (names.length === 2) {
-		strNames.push(names[0].name + ' & ' + names[1].name);
-	}
-	if (names.length >= 3) {
-		var revNames = names.reverse();
-		var lastNames = ' ' + names[1].name + ' & ' + names[0].name;
-		revNames.shift();
-		revNames.shift();
-		revNames.map((element, i) => {
-			i === revNames.length - 1
-				? strNames.push(element.name)
-				: strNames.push(' ' + element.name);
-		});
-		strNames.reverse().push(lastNames);
-	}
-	return strNames.toString();
+function countSheeps(arrayOfSheep) {
+	// --> Refactored appraoch
+	return arrayOfSheep.reduce((total, precence) => {
+		return precence ? (total += 1) : total;
+	}, 0);
+	// --> First proach
+	var total = 0;
+	arrayOfSheep.map((ele) => {
+		ele ? (total += 1) : null;
+	});
+	return total;
 }
 
-// --> Test Cases
-console.log(
-	list([
-		{ name: 'Bart' },
-		{ name: 'Lisa' },
-		{ name: 'Maggie' },
-		{ name: 'Homer' },
-		{ name: 'Marge' },
-	])
-);
-console.log(list([{ name: 'Bart' }, { name: 'Lisa' }, { name: 'Maggie' }]));
-console.log(list([{ name: 'Bart' }, { name: 'Lisa' }]));
+// --> Tests
+var array1 = [
+	true,
+	true,
+	true,
+	false,
+	true,
+	true,
+	true,
+	true,
+	true,
+	false,
+	true,
+	false,
+	true,
+	false,
+	false,
+	true,
+	true,
+	true,
+	true,
+	true,
+	false,
+	false,
+	true,
+	true,
+];
 
-// ------> Best practice and clever solution
-function list(names) {
-	var xs = names.map((p) => p.name); // extract the objects to string array
-	var x = xs.pop(); // get the last element from the extracted array
-	return xs.length ? xs.join(', ') + ' & ' + x : x || ''; // if length is > 0 then join all with ',' and append ' & ' to the last string else return the string itself or an empty string
+var array2 = [true, true, false, true];
+
+console.log(countSheeps(array1));
+
+// --> Best Practice + Clever solution
+function countSheeps(arrayOfSheeps) {
+	// The filter method acceptes the Boolean function as a test function
+	// and test each element in the array for a boolean value
+	return arrayOfSheeps.filter(Boolean).length;
 }
 
-//  ========= Kata test cases
-// Test.assertEquals(
-// 	list([
-// 		{ name: 'Bart' },
-// 		{ name: 'Lisa' },
-// 		{ name: 'Maggie' },
-// 		{ name: 'Homer' },
-// 		{ name: 'Marge' },
-// 	]),
-// 	'Bart, Lisa, Maggie, Homer & Marge',
-// 	'Must work with many names'
-// );
-// Test.assertEquals(
-// 	list([{ name: 'Bart' }, { name: 'Lisa' }, { name: 'Maggie' }]),
-// 	'Bart, Lisa & Maggie',
-// 	'Must work with many names'
-// );
-// Test.assertEquals(
-// 	list([{ name: 'Bart' }, { name: 'Lisa' }]),
-// 	'Bart & Lisa',
-// 	'Must work with two names'
-// );
-// Test.assertEquals(
-// 	list([{ name: 'Bart' }]),
-// 	'Bart',
-// 	'Wrong output for a single name'
-// );
-// Test.assertEquals(list([]), '', 'Must work with no names');
+// Test.expect(countSheeps(array1) == 17, 'There are 17 sheeps in total');
