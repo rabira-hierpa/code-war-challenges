@@ -6,18 +6,15 @@ OfficalLink =
 // My first approach to the problem
 var uniqueInOrder = function (iterable) {
 	//your code here - remember iterable can be a string or an array
-	let array = iterable.split(',');
-	console.log(array);
 };
 
 // --> Tests
-console.log(uniqueInOrder('AAAABBBCCDAABBB'));
 
-// Test.assertSimilar(uniqueInOrder('AAAABBBCCDAABBB'), [
-// 	'A',
-// 	'B',
-// 	'C',
-// 	'D',
-// 	'A',
-// 	'B',
-// ]);
+Test.assertSimilar(uniqueInOrder('AAAABBBCCDAABBB'), [
+	'A',
+	'B',
+	'C',
+	'D',
+	'A',
+	'B',
+]);
