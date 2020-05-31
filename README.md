@@ -4,19 +4,24 @@ This is repo for my personal algorithm challenge solutions to code wars.
 Feel free to explore.
 More challenges will be added soon.
 
+:heavy_multiplication_x: NO StackOverflow :heavy_exclamation_mark:
+
+✔️ Docs Allowed (MDN and w3schools)
+
 ### Current Challenge
 
-- [Unique In Order](https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript)
+- [Growth of a Population](https://www.codewars.com/kata/563b662a59afc2b5120000c6)
 
 ### Upocming Challenges
 
-- [Growth of a Population](https://www.codewars.com/kata/563b662a59afc2b5120000c6)
+-
 
 ### Archived Challenges
 
 1. [Replace Alphabet With Position](https://www.codewars.com/kata/546f922b54af40e1e90001da)
 2. [Format a string of names](https://www.codewars.com/kata/53368a47e38700bd8300030d/train/javascript)
 3. [Counting sheep](https://www.codewars.com/kata/54edbc7200b811e956000556)
+4. [Unique In Order](https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript)
 
 ### Local Test setup
 
