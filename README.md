@@ -10,11 +10,11 @@ More challenges will be added soon.
 
 ### Current Challenge
 
-- [Growth of a Population](https://www.codewars.com/kata/563b662a59afc2b5120000c6)
+- [Square Every Digit](https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript)
 
 ### Upocming Challenges
 
--
+- [Growth of a Population](https://www.codewars.com/kata/563b662a59afc2b5120000c6)
 
 ### Archived Challenges
 
