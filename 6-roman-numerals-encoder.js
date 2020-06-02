@@ -29,7 +29,7 @@ solution(1990);
 solution(2007);
 solution(2008);
 
-// --> Codware test using mocah
+// --> Codewars test using mocah
 // describe('solution', () => {
 // 	it('should handle small numbers', () => {
 // 		Test.assertEquals(solution(2), 'II', '2 should, "II"');
