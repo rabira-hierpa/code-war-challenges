@@ -6,12 +6,11 @@ More challenges will be added soon.
 
 :heavy_multiplication_x: NO StackOverflow :heavy_exclamation_mark:
 
-✔️ Docs Allowed (MDN and w3schools)
+✔️ Docs Allowed (MDN,w3schools and geeksforgeeks)
 
 ### Current Challenge
 
 - [Roman Number Encoder](https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript)
--
 
 ### Upocming Challenges
 
