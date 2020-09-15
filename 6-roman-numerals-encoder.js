@@ -1,35 +1,93 @@
 // Roman numerals encoder  - Challenge #4
 
 OfficalLink =
-	'https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript';
+	'https://www.codewars.com/kata/51b62bf6a9c58071c600001b/train/javascript';
 
 // My first approach to the problem
 // --> NO StackOverflow !!!
+// --> NO YouTube !!!
 // --> Docs allowed (MSDN and w3schools)
+/// Roman numbers
+// I <-> 1
+// V <-> 5
+// X <-> 10
+// L <-> 50
+// C <-> 100
+// D <-> 500
+// M <-> 1,000
+
 function solution(number) {
 	// convert the number to a roman numeral
+	const romanDict = {
+		1: 'I',
+		4: 'IV',
+		5: 'V',
+		9: 'IX',
+		10: 'X',
+		40: 'XL',
+		50: 'L',
+		90: 'XC',
+		100: 'C',
+		400: 'CD',
+		500: 'D',
+		900: 'CM',
+		1000: 'M',
+	};
+
+	let convertedRoman = [];
+
+	let div = 1;
+	while (number >= div) {
+		div *= 10;
+	}
+
+	div /= 10;
+
+	result = '';
+
+	while (number) {
+		lastNum = Math.trunc(number / div);
+		if (lastNum <= 3) {
+			result = romanDict[div].repeat(lastNum);
+			convertedRoman.push(romanDict[div].repeat(lastNum));
+		} else if (lastNum == 4) {
+			result = romanDict[div] + romanDict[div * 5];
+			convertedRoman.push(result);
+		} else if (lastNum == 9) {
+			result = romanDict[div] + romanDict[div * 10];
+			convertedRoman.push(result);
+		} else if (5 <= lastNum <= 8) {
+			result = romanDict[div * 5] + romanDict[div].repeat(lastNum - 5);
+			convertedRoman.push(result);
+		}
+
+		number = Math.floor(number % div);
+		div /= 10;
+	}
+	return convertedRoman.join('');
 }
 
 // --> Tests
-solution(1);
-solution(2);
-solution(3);
-solution(4);
-solution(5);
-solution(9);
-solution(10);
-solution(11);
-solution(19);
-solution(22);
-solution(15);
+console.log(solution(1));
+console.log(solution(2));
+console.log(solution(3));
+console.log(solution(4));
+console.log(solution(5));
+console.log(solution(6));
+console.log(solution(9));
+console.log(solution(10));
+console.log(solution(11));
+console.log(solution(19));
+console.log(solution(22));
+console.log(solution(15));
 
-solution(1000);
-solution(1001);
-solution(1990);
-solution(2007);
-solution(2008);
+console.log(solution(1000));
+console.log(solution(1001));
+console.log(solution(1990));
+console.log(solution(2007));
+console.log(solution(2008));
 
-// --> Codewars test using mocah
+// --> Codware test using mocah
 // describe('solution', () => {
 // 	it('should handle small numbers', () => {
 // 		Test.assertEquals(solution(2), 'II', '2 should, "II"');
