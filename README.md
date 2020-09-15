@@ -6,11 +6,11 @@ More challenges will be added soon.
 
 :heavy_multiplication_x: NO StackOverflow :heavy_exclamation_mark:
 
-✔️ Docs Allowed (MDN,w3schools and geeksforgeeks)
+✔️ Docs Allowed (MDN and w3schools)
 
 ### Current Challenge
 
-- [Roman Number Encoder](https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript)
+- [Breaking camelCase](https://www.codewars.com/kata/5208f99aee097e6552000148/train/javascript)
 
 ### Upocming Challenges
 
@@ -24,6 +24,7 @@ More challenges will be added soon.
 3. [Counting sheep](https://www.codewars.com/kata/54edbc7200b811e956000556)
 4. [Unique In Order](https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript)
 5. [Square Every Digit](https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript)
+6. [Roman Number Encoder](https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript)
 
 ### Local Test setup
 
