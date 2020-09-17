@@ -10,7 +10,7 @@ More challenges will be added soon.
 
 ### Current Challenge
 
-- [Breaking camelCase](https://www.codewars.com/kata/5208f99aee097e6552000148/train/javascript)
+- [Growth of a Population](https://www.codewars.com/kata/563b662a59afc2b5120000c6)
 
 ### Upocming Challenges
 
@@ -25,6 +25,8 @@ More challenges will be added soon.
 4. [Unique In Order](https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript)
 5. [Square Every Digit](https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript)
 6. [Roman Number Encoder](https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript)
+7. [Breaking camelCase](https://www.codewars.com/kata/5208f99aee097e6552000148/train/javascript)
+8. [List Filtering](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript)
 
 ### Local Test setup
 
