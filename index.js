@@ -1,35 +1,36 @@
-// Break camelCase - Challenge #7
+// List Filtering - Challenge #8
 
 OfficalLink =
-	'https://www.codewars.com/kata/5208f99aee097e6552000148/train/javascript';
+	'https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript';
 
 // My first approach to the problem
 // --> NO StackOverflow !!!
 // --> NO YouTube !!!
 // --> Docs allowed (MSDN and w3schools)
 
-function solution(string) {
-	// charCodeAt() - returns the unicode of the character
-	result = [];
-	string.split('').map((char, idx) => {
-		return string.charCodeAt(idx) < 90
-			? result.push(` ${char}`)
-			: result.push(`${char}`);
+function filter_list(list) {
+	// Return a new array with the strings filtered out
+	filtered = [];
+	list.map((element) => {
+		return !isNaN(element) && Number(element) === element
+			? filtered.push(element)
+			: null;
 	});
-	return result.join('');
+	return filtered;
+}
+
+// Codewars best soution
+function filterList(list) {
+	return list.filter((element) => typeof element == 'number');
 }
 
 // --> Tests
 
-console.log(solution('javaScriptIsSoAwesome'));
-console.log(solution('camelCase'));
-console.log(solution('rattleSnake'));
-console.log(solution('pythonCodeTesting'));
+console.log(filter_list([1, 2, 'a', 'b']));
+console.log(filter_list([1, 'a', 'b', 0, 15]));
+console.log(filter_list([1, 2, 'aasf', '1', '123', 123]));
 
 // --> Codware test using mocah
-// Test.assertEquals(solution('camelCasing'), 'camel Casing', 'Unexpected result');
-// Test.assertEquals(
-// 	solution('camelCasingTest'),
-// 	'camel Casing Test',
-// 	'Unexpected result'
-// );
+// Test.assertSimilar(filter_list([1, 2, 'a', 'b']), [1, 2]);
+// Test.assertSimilar(filter_list([1, 'a', 'b', 0, 15]), [1, 0, 15]);
+// Test.assertSimilar(filter_list([1, 2, 'aasf', '1', '123', 123]), [1, 2, 123]);
