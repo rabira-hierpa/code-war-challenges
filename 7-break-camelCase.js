@@ -19,6 +19,11 @@ function solution(string) {
 	return result.join('');
 }
 
+// Codewars best soultion
+function breakCamelCase(strings) {
+	return strings.replace(/([A-Z])/g, ' $1');
+}
+
 // --> Tests
 
 console.log(solution('javaScriptIsSoAwesome'));
