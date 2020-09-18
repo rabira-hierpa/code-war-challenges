@@ -1,36 +1,69 @@
 // List Filtering - Challenge #8
 
 OfficalLink =
-	'https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript';
+	'https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript';
 
 // My first approach to the problem
 // --> NO StackOverflow !!!
 // --> NO YouTube !!!
 // --> Docs allowed (MSDN and w3schools)
 
-function filter_list(list) {
-	// Return a new array with the strings filtered out
-	filtered = [];
-	list.map((element) => {
-		return !isNaN(element) && Number(element) === element
-			? filtered.push(element)
-			: null;
-	});
-	return filtered;
+function solution(str) {
+	let charLength = str.length;
+	let array = [];
+	if (charLength % 2 === 0) {
+		let idx = 0;
+		str.split('').forEach((element) => {
+			str[idx] ? array.push(str.substr(idx, 2)) : null;
+			idx += 2;
+		});
+		return array;
+	} else {
+		let idx = 0;
+		str.split('').forEach((element, index) => {
+			str[idx] ? array.push(str.substr(idx, 2)) : null;
+			idx += 2;
+		});
+		array.pop();
+		var last = charLength - 1;
+		array.push(str[last] + '_');
+		return array;
+	}
 }
 
 // Codewars best soution
-function filterList(list) {
-	return list.filter((element) => typeof element == 'number');
+function spliString1(str) {
+	var i = 0;
+	var result = new Array();
+	if (str.length % 2 !== 0) {
+		str = str + '_';
+	}
+	while (i < str.length) {
+		result.push(str[i] + str[i + 1]);
+		i += 2;
+	}
+	return result;
 }
 
+// ==> Using Regex
+function splitStringRegex(s) {
+	return (s + '_').match(/.{2}/g) || [];
+}
 // --> Tests
 
-console.log(filter_list([1, 2, 'a', 'b']));
-console.log(filter_list([1, 'a', 'b', 0, 15]));
-console.log(filter_list([1, 2, 'aasf', '1', '123', 123]));
-
+console.log(solution('abcde'));
+console.log(solution('abcdef'));
+console.log(solution('abcdefg'));
+console.log(solution('abcdefghijk'));
+console.log(solution(''));
+console.log(solution('a'));
 // --> Codware test using mocah
-// Test.assertSimilar(filter_list([1, 2, 'a', 'b']), [1, 2]);
-// Test.assertSimilar(filter_list([1, 'a', 'b', 0, 15]), [1, 0, 15]);
-// Test.assertSimilar(filter_list([1, 2, 'aasf', '1', '123', 123]), [1, 2, 123]);
+// const { assert } = require('chai');
+
+// describe('Split Strings', () => {
+// 	it('Basic tests', () => {
+// 		assert.deepEqual(solution('abcdef'), ['ab', 'cd', 'ef']);
+// 		assert.deepEqual(solution('abcdefg'), ['ab', 'cd', 'ef', 'g_']);
+// 		assert.deepEqual(solution(''), []);
+// 	});
+// });
