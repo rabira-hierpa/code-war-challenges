@@ -8,8 +8,9 @@ More challenges will be added soon.
 
 ✔️ Docs Allowed (MDN and w3schools)
 
-### Current Challenge
+## Current Challenge
 
+- [Split String](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript)
 - [Growth of a Population](https://www.codewars.com/kata/563b662a59afc2b5120000c6)
 
 ### Upocming Challenges
