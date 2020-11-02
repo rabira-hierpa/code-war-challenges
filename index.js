@@ -9,22 +9,23 @@ OfficalLink =
 // --> Docs allowed (MSDN and w3schools)
 
 function firstNonRepeatingLetter(string) {
-	let strArray = string.split('').sort();
+	let strArray = string.split('');
 	let unique = [];
 	let double = [];
-	console.log(strArray);
+	// console.log(strArray);
 	for (let i = 0; i < strArray.length; i++) {
 		const holder = strArray[i];
+		let checker = 0;
+		// console.log(holder);
 		for (let j = i + 1; j < strArray.length; j++) {
 			const walker = strArray[j];
 			if (holder === walker) {
+				checker += 1;
 				double.push(holder);
-				i = i + 1;
-			} else {
-				unique.includes(holder) && double.includes(holder)
-					? null
-					: unique.push(holder);
 			}
+		}
+		if (checker === 0 && double.lastIndexOf(holder) === -1) {
+			unique.push(holder);
 		}
 	}
 	console.log(unique);
@@ -38,6 +39,7 @@ function firstNonRepeatingLetter(string) {
 console.log(firstNonRepeatingLetter('stress'));
 console.log(firstNonRepeatingLetter('sTressTest'));
 console.log(firstNonRepeatingLetter('a'));
+console.log(firstNonRepeatingLetter('abba'));
 console.log(firstNonRepeatingLetter('moomen'));
 console.log(firstNonRepeatingLetter(''));
 // console.log(firstNonRepeatingLetter('tata'));
