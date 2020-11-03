@@ -10,42 +10,54 @@ OfficalLink =
 
 function firstNonRepeatingLetter(string) {
 	let strArray = string.split('');
-	let unique = [];
-	let double = [];
-	// console.log(strArray);
+	let unique = []; // holdes unique characters
+	let double = []; // holdes double characters
 	for (let i = 0; i < strArray.length; i++) {
 		const holder = strArray[i];
 		let checker = 0;
-		// console.log(holder);
 		for (let j = i + 1; j < strArray.length; j++) {
 			const walker = strArray[j];
-			if (holder === walker) {
+			if (holder.toLowerCase() === walker.toLowerCase()) {
+				// compare using lowercase
 				checker += 1;
 				double.push(holder);
 			}
 		}
+		// check if the cheker is 0 and holder is not a double value
 		if (checker === 0 && double.lastIndexOf(holder) === -1) {
 			unique.push(holder);
 		}
 	}
-	console.log(unique);
-	return unique.length ? unique[0] : string;
+	// return the first character of the unique
+	// array or the string itself if its legnth
+	// is only one
+	return unique.length ? unique[0] : strArray.length === 1 ? string : '';
 }
+// Codewars best practice and clever solution
 
-// Codewars best soution
+function firstNonRepeatingLetter(s) {
+	for (var i in s) {
+		if (s.match(new RegExp(s[i], 'gi')).length === 1) {
+			return s[i];
+		}
+	}
+	return '';
+}
 
 // --> Tests
 
+console.log(firstNonRepeatingLetter('sTreSS'));
 console.log(firstNonRepeatingLetter('stress'));
 console.log(firstNonRepeatingLetter('sTressTest'));
 console.log(firstNonRepeatingLetter('a'));
 console.log(firstNonRepeatingLetter('abba'));
 console.log(firstNonRepeatingLetter('moomen'));
 console.log(firstNonRepeatingLetter(''));
-// console.log(firstNonRepeatingLetter('tata'));
-// console.log(firstNonRepeatingLetter('cars'));
-// console.log(firstNonRepeatingLetter(''));
-// console.log(firstNonRepeatingLetter('a'));
+console.log(firstNonRepeatingLetter('tata'));
+console.log(firstNonRepeatingLetter('cars'));
+console.log(firstNonRepeatingLetter(''));
+console.log(firstNonRepeatingLetter('a'));
+console.log(firstNonRepeatingLetter("Go hang a salami, I'm a lasagna hog!"));
 // --> Codware test using mocah
 // Test.describe('Simple Tests', function() {
 //   it('should handle simple tests', function() {
