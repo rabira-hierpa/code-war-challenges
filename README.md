@@ -8,15 +8,15 @@ More challenges will be added soon.
 
 ✔️ Docs Allowed (MDN and w3schools)
 
+![Codewars Rank](https://www.codewars.com/users/rabra/badges/large)
+
 ## Current Challenge
 
-- [Split String](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript)
-- [Growth of a Population](https://www.codewars.com/kata/563b662a59afc2b5120000c6)
+- [Grasshopper - Summation](https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/python)
 
 ### Upocming Challenges
 
-- [Growth of a Population](https://www.codewars.com/kata/563b662a59afc2b5120000c6)
-- [Title Case](https://www.codewars.com/kata/5202ef17a402dd033c000009/train/javascript)
+- [Persistent Bugger](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/python)
 
 ### Archived Challenges
 
@@ -28,6 +28,8 @@ More challenges will be added soon.
 6. [Roman Number Encoder](https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript)
 7. [Breaking camelCase](https://www.codewars.com/kata/5208f99aee097e6552000148/train/javascript)
 8. [List Filtering](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript)
+9. [Split String](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript)
+10. [First Non-repeating character](https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/javascript)
 
 ### Local Test setup
 
