@@ -12,7 +12,7 @@ More challenges will be added soon.
 
 ## Current Challenge
 
-- [Grasshopper - Summation](https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/python)
+- [Sum of odd numbers](https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/train/python)
 
 ### Upocming Challenges
 
@@ -30,6 +30,7 @@ More challenges will be added soon.
 8. [List Filtering](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript)
 9. [Split String](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript)
 10. [First Non-repeating character](https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/javascript)
+11. [Needle in a haystack](https://www.codewars.com/kata/56676e8fabd2d1ff3000000c/solutions/python)
 
 ### Local Test setup
 
