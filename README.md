@@ -17,8 +17,13 @@ More challenges will be added soon.
 ### Upocming Challenges
 
 - [Persistent Bugger](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/python)
+- [Keep Hydrated!](https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python)
 
 ### Archived Challenges
+
+---
+
+#### JavaScript Challenges
 
 1. [Replace Alphabet With Position](https://www.codewars.com/kata/546f922b54af40e1e90001da)
 2. [Format a string of names](https://www.codewars.com/kata/53368a47e38700bd8300030d/train/javascript)
@@ -30,7 +35,11 @@ More challenges will be added soon.
 8. [List Filtering](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript)
 9. [Split String](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript)
 10. [First Non-repeating character](https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/javascript)
-11. [Needle in a haystack](https://www.codewars.com/kata/56676e8fabd2d1ff3000000c/solutions/python)
+
+#### Python Challengs
+
+1. [Needle in a haystack](https://www.codewars.com/kata/56676e8fabd2d1ff3000000c/solutions/python)
+2. [Basic Mathematical Operations](https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/python)
 
 ### Local Test setup
 
