@@ -1,6 +1,6 @@
-# THird python challenge - Basic Mathematical Operations
+# Third python challenge - Sum of odd numbers
 
-OfficalLink = 'https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/python'
+OfficalLink = 'https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/train/python'
 
 # My first approach to the problem
 # --> NO StackOverflow !!!
@@ -9,16 +9,16 @@ OfficalLink = 'https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/pyth
 
 
 def row_sum_odd_numbers(n):
-    sums = 0
-    if n == 1:
-        return 1
-    else:
-        for i in range(n):
-            if i % 2 != 0:
-                sums += i
-    return sums
+    return n ** 3
 
 # Codewars best practice and clever solution
+
+
+def row_sum_odd_numbers2(n):
+    if type(n) == int and n > 0:
+        return n**3
+    else:
+        return "Input a positive integer"
 
 
 # Test
