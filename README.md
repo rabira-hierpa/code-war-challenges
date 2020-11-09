@@ -12,7 +12,7 @@ More challenges will be added soon.
 
 ## Current Challenge
 
-- [Sum of odd numbers](https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/train/python)
+- [Sum of positive](https://www.codewars.com/kata/5715eaedb436cf5606000381/train/python)
 
 ### Upocming Challenges
 
@@ -40,6 +40,7 @@ More challenges will be added soon.
 
 1. [Needle in a haystack](https://www.codewars.com/kata/56676e8fabd2d1ff3000000c/solutions/python)
 2. [Basic Mathematical Operations](https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/python)
+3. [Sum of odd numbers](https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/train/python)
 
 ### Local Test setup
 
