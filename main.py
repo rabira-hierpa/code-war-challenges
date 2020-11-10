@@ -1,4 +1,4 @@
-# Fifth python challenge -
+# _______ python challenge -
 
 OfficalLink = ''
 
@@ -6,3 +6,9 @@ OfficalLink = ''
 # --> NO StackOverflow !!!
 # --> NO YouTube !!!
 # --> Docs allowed(MSDN and w3schools)
+
+
+# Codewars best practice and clever solution
+
+
+# Test
