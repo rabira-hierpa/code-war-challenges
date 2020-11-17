@@ -12,12 +12,11 @@ More challenges will be added soon.
 
 ## Current Challenge
 
-- [Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/python)
+- [Keep Hydrated!](https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python)
 
 ### Upocming Challenges
 
-- [Persistent Bugger](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/python)
-- [Keep Hydrated!](https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python)
+-
 
 ### Archived Challenges
 
@@ -42,6 +41,8 @@ More challenges will be added soon.
 2. [Basic Mathematical Operations](https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/python)
 3. [Sum of odd numbers](https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/train/python)
 4. [Sum of positive](https://www.codewars.com/kata/5715eaedb436cf5606000381/train/python)
+5. [Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/python)
+6. [Persistent Bugger](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/python)
 
 ### Local Test setup
 
