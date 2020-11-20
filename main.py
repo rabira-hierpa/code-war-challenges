@@ -1,6 +1,7 @@
-# 6th python challenge - Persistence Bugger
+# 7th python challenge - Keep hydrated
 
-OfficalLink = 'https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/python'
+import math
+OfficalLink = 'https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python'
 
 # My first approach to the problem
 # --> NO StackOverflow !!!
@@ -8,47 +9,21 @@ OfficalLink = 'https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/pyth
 # --> Docs allowed(MSDN and w3schools)
 
 
-def persistence(num):
-    if "0" in str(num):
-        return 1 
-    count = 0
-    product = multiply(num)
-    result = [int(j) for j in str(product)]
-    if len(result) > 1:
-        count = count + 1
-        while len(result) > 1:
-            product = multiply(product)
-            result = [int(j) for j in str(product)]
-            count = count + 1
-            if (len(result)) == 1:
-                return count
-    else:
-        print(count)
-        return count
-
-
-def multiply(num):
-    num = [int(x) for x in str(num)]
-    product = 1
-    for ele in num:
-        product = product * ele
-    return product
-
+def litres(time):
+    return math.floor(time*0.5)
 
 # Codewars best practice and clever solution
-import operator
-def persistence(n):
-    i = 0
-    while n>=10:
-        n=reduce(operator.mul,[int(x) for x in str(n)],1)
-        i+=1
-    return i
+
+
+def litres2(time):
+    return time // 2
+
 
 # Test
-persistence(39)
-persistence(4)
-persistence(25)
-persistence(999)
-persistence(190453)
-persistence(10194)
-persistence(10194)
+litres(2)
+litres(1.4)
+litres(12.3)
+litres(0.82)
+litres(11.8)
+litres(1787)
+litres(0)
