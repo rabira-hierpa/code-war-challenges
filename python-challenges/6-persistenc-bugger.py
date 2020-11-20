@@ -1,5 +1,6 @@
 # 6th python challenge - Persistence Bugger
 
+import operator
 OfficalLink = 'https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/python'
 
 # My first approach to the problem
@@ -10,7 +11,7 @@ OfficalLink = 'https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/pyth
 
 def persistence(num):
     if "0" in str(num):
-        return 1 
+        return 1
     count = 0
     product = multiply(num)
     result = [int(j) for j in str(product)]
@@ -36,13 +37,15 @@ def multiply(num):
 
 
 # Codewars best practice and clever solution
-import operator
-def persistence(n):
+
+
+def persistence2(n):
     i = 0
-    while n>=10:
-        n=reduce(operator.mul,[int(x) for x in str(n)],1)
-        i+=1
+    while n >= 10:
+        n = reduce(operator.mul, [int(x) for x in str(n)], 1)
+        i += 1
     return i
+
 
 # Test
 persistence(39)
