@@ -12,11 +12,12 @@ More challenges will be added soon.
 
 ## Current Challenge
 
-- [Keep Hydrated!](https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python)
+-
 
 ### Upocming Challenges
 
--[Extract the domain name from a URL](https://www.codewars.com/kata/514a024011ea4fb54200004b/train/python)
+- [Extract the domain name from a URL](https://www.codewars.com/kata/514a024011ea4fb54200004b/train/python)
+- [Two Sum](https://www.codewars.com/kata/52c31f8e6605bcc646000082/python)
 
 ### Archived Challenges
 
@@ -43,7 +44,9 @@ More challenges will be added soon.
 4. [Sum of positive](https://www.codewars.com/kata/5715eaedb436cf5606000381/train/python)
 5. [Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/python)
 6. [Persistent Bugger](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/python)
+7. [Keep Hydrated!](https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python)
 
 ### Local Test setup
 
-I am using VS code to solve the challenges with the Quokka Extension
+I am using VS code to solve the challenges with the Quokka Extension for Javascript
+and Jupiter notebook for Python challenges
