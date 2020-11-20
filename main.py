@@ -9,21 +9,15 @@ OfficalLink = 'https://www.codewars.com/kata/582cb0224e56e068d800003c/train/pyth
 # --> Docs allowed(MSDN and w3schools)
 
 
-def litres(time):
-    return math.floor(time*0.5)
+def reverse_words(text):
+    return ' '.join([words[::-1] for words in text.split(' ')])
 
 # Codewars best practice and clever solution
-
-
-def litres2(time):
-    return time // 2
+# Is identical to my solution
 
 
 # Test
-litres(2)
-litres(1.4)
-litres(12.3)
-litres(0.82)
-litres(11.8)
-litres(1787)
-litres(0)
+reverse_words('The quick brown fox jumped over the lazy dog.')
+reverse_words('apple')
+reverse_words('a b c d')
+reverse_words('double  spaced  words')
