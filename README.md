@@ -12,7 +12,7 @@ More challenges will be added soon.
 
 ## Current Challenge
 
--
+- [Find the middle element](https://www.codewars.com/kata/545a4c5a61aa4c6916000755/train/python)
 
 ### Upocming Challenges
 
@@ -45,6 +45,7 @@ More challenges will be added soon.
 5. [Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/python)
 6. [Persistent Bugger](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/python)
 7. [Keep Hydrated!](https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python)
+8. [Reverse words](https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/python)
 
 ### Local Test setup
 
