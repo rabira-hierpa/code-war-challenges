@@ -1,7 +1,6 @@
-# 7th python challenge - Keep hydrated
+# 8th python challenge - Reverse words
 
-import math
-OfficalLink = 'https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python'
+OfficalLink = 'https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/python'
 
 # My first approach to the problem
 # --> NO StackOverflow !!!
