@@ -12,12 +12,11 @@ More challenges will be added soon.
 
 ## Current Challenge
 
-- [Two Sum](https://www.codewars.com/kata/52c31f8e6605bcc646000082/python)
+- [Extract the domain name from a URL](https://www.codewars.com/kata/514a024011ea4fb54200004b/train/python)
 
 ### Upocming Challenges
 
 - [Extract the domain name from a URL](https://www.codewars.com/kata/514a024011ea4fb54200004b/train/python)
--
 
 ### Archived Challenges
 
@@ -47,6 +46,7 @@ More challenges will be added soon.
 7. [Keep Hydrated!](https://www.codewars.com/kata/582cb0224e56e068d800003c/train/python)
 8. [Reverse words](https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/python)
 9. [Find the middle element](https://www.codewars.com/kata/545a4c5a61aa4c6916000755/train/python)
+10. [Two Sum](https://www.codewars.com/kata/52c31f8e6605bcc646000082/python)
 
 ### Local Test setup
 
