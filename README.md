@@ -16,7 +16,7 @@ More challenges will be added soon.
 
 ### Upocming Challenges
 
-- [Extract the domain name from a URL](https://www.codewars.com/kata/514a024011ea4fb54200004b/train/python)
+- [Summing a number's digits](https://www.codewars.com/kata/52f3149496de55aded000410/train/python)
 
 ### Archived Challenges
 
